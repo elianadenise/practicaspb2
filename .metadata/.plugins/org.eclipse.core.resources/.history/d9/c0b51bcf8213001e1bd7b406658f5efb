@@ -1,0 +1,39 @@
+package clubDeDeportes;
+
+import java.util.*;
+
+import enumeradores.TipoDeEvento;
+
+public class Club {
+
+	
+	private String nombre;
+	private Set<Deportista> socios;
+	private Map<String, Evento> competencias;
+	
+	public Club(String nombre) {
+		this.nombre = nombre;
+		this.socios = new TreeSet<Deportista>();
+		this.competencias = new HashMap<String, Evento>();
+	}
+	
+	
+	
+	public void agregarDeportista(Corredor corredor) {
+		// TODO Auto-generated method stub
+		
+	}
+	public Object getCantidadSocios() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public Object inscribirEnEvento(String string, Deportista celeste) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void crearEvento(TipoDeEvento carrera42k, String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

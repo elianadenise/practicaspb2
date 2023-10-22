@@ -1,0 +1,29 @@
+package clubDeDeportes;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.*;
+import java.util.Set;
+
+import enumeradores.TipoDeEvento;
+
+public class Evento {
+
+	private TipoDeEvento tipo;
+	private Integer numeroDeInscripcion;
+	private Map<Integer, Deportista> participantes;
+	
+	public Evento(TipoDeEvento tipo, Integer numeroDeInscripcion) {
+		this.tipo = tipo;
+		this.numeroDeInscripcion = numeroDeInscripcion;
+		this.participantes = new TreeMap<Integer, Deportista>();
+	}
+	
+	public inscribirDeportista(Deportista deportista) {
+		
+	}
+	
+	public Integer cantidadDeParticipantes() {
+		return this.participantes.size();
+	}
+}

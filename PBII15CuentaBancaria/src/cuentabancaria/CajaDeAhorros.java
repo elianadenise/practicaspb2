@@ -13,7 +13,8 @@ public class CajaDeAhorros extends CuentaBancaria{
 		this.MAXIMO_EXTRACCION_SIN_ADICIONAL = 5;
 	}
 	
-	public Boolean extraer(Double monto) {
+	@Override
+	public Boolean extraer(Double monto) throws SaldoInsuficiente {
 		if(this.contadorExtraccion < this.MAXIMO_EXTRACCION_SIN_ADICIONAL && monto <= this.saldo) {
 			this.saldo = this.saldo - monto;
 			this.contadorExtraccion++;
@@ -22,7 +23,8 @@ public class CajaDeAhorros extends CuentaBancaria{
 			this.saldo = this.saldo - monto - this.costoAdicionalPorExtraccion;
 			return true;
 		} 
-		return false;
+		throw new SaldoInsuficiente();
+		//return false;
 	}
 
 	public Integer getContadorExtraccion() {

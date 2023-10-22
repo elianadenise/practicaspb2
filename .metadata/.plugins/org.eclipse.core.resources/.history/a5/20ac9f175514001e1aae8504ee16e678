@@ -1,0 +1,34 @@
+package monitoreo;
+
+public abstract class MedioTransporte {
+
+	protected Double latitud;
+	protected Double longitud;
+	
+	public MedioTransporte(Double latitud, Double longitud) {
+		this.latitud = latitud;
+		this.latitud = longitud;
+	}
+	
+	public Double getLatitud() {
+		return latitud;
+	}
+
+	public Double getLongitud() {
+		return longitud;
+	}
+
+	protected void actualizarCoordenadas(Double latitud, Double longitud) {
+		this.setLatitud(latitud);
+		this.setLongitud(longitud);
+	}
+
+	public void setLatitud(Double latitud) {
+		this.latitud = latitud;
+	}
+
+	public void setLongitud(Double longitud) {
+		this.longitud = longitud;
+	}
+	
+}

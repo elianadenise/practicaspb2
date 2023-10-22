@@ -1,0 +1,31 @@
+package clubDeDeportes;
+
+import enumeradores.TipoDeBicicleta;
+
+public class Triatleta extends Deportista {
+
+	private String categoria;
+	private TipoDeBicicleta tipoDeBicicleta;
+
+	public Triatleta(Integer codigo, String nombre, String categoria, TipoDeBicicleta tipo) {
+		super(codigo, nombre);
+		this.categoria = categoria;
+		this.tipoDeBicicleta = tipo;
+	}
+
+	public Object getDistanciaPreferida() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getTipoDeBicicleta() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getNumeroDeSocio() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

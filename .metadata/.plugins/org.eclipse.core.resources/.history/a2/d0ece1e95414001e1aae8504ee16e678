@@ -1,0 +1,32 @@
+package monitoreo;
+import java.util.*;
+public class Mapa {
+
+	private String nombre;
+	private Set<MedioTransporte> vehiculos;
+	public Mapa(String nombre) {
+		// TODO Auto-generated constructor stub
+		this.nombre = nombre;
+		this.vehiculos = new HashSet<MedioTransporte>();
+	}
+
+	public void agregarVehiculo(MedioTransporte medio) {
+		this.vehiculos.add(medio);
+	}
+
+	public Integer getCantidadDeVehiculos() {
+		// TODO Auto-generated method stub
+		return this.vehiculos.size();
+	}
+
+	public Boolean hayCoalición() throws ColitionException {
+		// TODO Auto-generated method stub
+		
+		
+		
+		
+		
+		throw new ColitionException();
+	}
+
+}

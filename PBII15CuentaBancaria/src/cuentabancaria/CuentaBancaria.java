@@ -22,6 +22,6 @@ public abstract class CuentaBancaria {
 		return true;
 	}
 	
-	public abstract Boolean extraer(Double monto);
+	public abstract Boolean extraer(Double monto) throws SaldoInsuficiente ;
 	
 }

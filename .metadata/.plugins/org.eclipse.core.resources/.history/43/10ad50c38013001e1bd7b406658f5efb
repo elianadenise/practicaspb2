@@ -1,0 +1,12 @@
+package clubDeDeportes;
+
+public class Corredor extends Deportista{
+
+	private Integer distanciaPreferida;
+
+	public Corredor(Integer codigo, String nombre, Integer distanciaPreferida) {
+		super(codigo, nombre);
+		this.distanciaPreferida = distanciaPreferida;
+	}
+
+}

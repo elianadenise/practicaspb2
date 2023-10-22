@@ -1,0 +1,22 @@
+package clubDeDeportes;
+
+public class Nadador extends Deportista {
+
+	private String estiloPreferido;
+
+	public Nadador(Integer codigo, String nombre, String estiloPreferido) {
+		super(codigo, nombre);
+		this.estiloPreferido = estiloPreferido;
+	}
+
+	public Object getEstiloPreferido() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getNumeroDeSocio() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

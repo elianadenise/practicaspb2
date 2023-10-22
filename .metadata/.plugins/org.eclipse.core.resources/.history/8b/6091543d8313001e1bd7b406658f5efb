@@ -1,0 +1,5 @@
+package clubDeDeportes;
+
+public class NoEstaPreparado extends Exception {
+
+}

@@ -1,0 +1,5 @@
+package monitoreo;
+
+public class ColitionException extends Exception {
+
+}
